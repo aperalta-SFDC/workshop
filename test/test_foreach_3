@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use warnings;
+
+my @words = qw|help sort fish|;
+my @temp = @words;
+my @words2;
+my $i;
+my $words;
+
+foreach $i (@words)
+{
+$words = shift (@temp);
+$words .= "ing";
+push (@words2, $words);
+}
+print (@words, "\n");
+print (@words2, "\n");

@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+use warnings;
+
+my $i;
+my @array1 = (1,2,3,4,5);
+my @array2 = (9,8,7,6);
+my @temp = @array1;
+
+foreach $i (@array1) {
+$array1 = pop (@temp);
+$array1 += 2;
+push (@array2, $array1);
+}
+
+print @array2, "\n";

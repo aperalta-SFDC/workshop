@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+use warnings;
+
+@letters = ('e', 'f', 'g', 'h');
+$counter = @letters;
+print "@letters\n", "\n";
+print $counter, "\n";

@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+use warnings;
+%links = (
+	1 => " AC",
+	2 => " DF",
+	3 => " GJ"
+);
+@links = %links;
+%links = reverse(@links);
+print %links, "\n";
+print @links, "\n";
+
+%hash = (
+	1 => " A ",
+	2 => " B ",
+	3 => " C ",
+	4 => " D "
+);
+@hash = keys(%hash);
+print %hash, "\n";
+print @hash, "\n";
+
+$hash {4} = " E ";
+$hash {5} = " D ";
+delete $hash {1};
+print %hash, "\n";
+
+@hash = keys(%hash);
+print %hash, "\n";
+print @hash, "\n";

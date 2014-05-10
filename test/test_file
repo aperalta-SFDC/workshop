@@ -1,0 +1,69 @@
+#!/usr/bin/perl
+
+use warnings;
+
+print 2 ... 9, "\n"; 
+print "code \n" x4;
+
+print "% = ", ord ("%"), "\n";
+print "? = ", ord ("?"), "\n";
+print "Is % less than ?? \n";
+
+if("%" lt "?")
+{
+	print "Yes", "\n";
+}
+else
+{
+	print "No", "\n";
+}
+
+print ("The sequence contains the number 2. \n") if 123=~m/2/;
+
+print "You "."try "x"3"."again\n";
+
+print "You ", "try "x3*3, " again \n";
+print "You ", "try "x(3*3), " again \n";
+print ("my", "hat", "\n"); 
+
+$a = 1;
+$b = 4;
+$c = 9;
+$d = 12;
+print (("$a","$b","$c","$d") [2]);
+print "\n";
+print (("e" ... "h"," 14") [2 ... 4]);
+print "\n";
+print (("e" ..."h"," 14") [0 ...2, 4]);
+print "\n";
+
+@letters = ('e', 'f', 'g', 'h');
+$counter=@letters;
+print "@letters\n", "\n";
+print $counter, "\n";
+print scalar @letters, "\n";
+
+@array = (1, 2, 3, 4);
+print "Original numbers: @array\n";
+for ($i = 0; $i <= $#array; $i++)
+{
+	$array[$i] *= 2;
+}
+print "New numbers: @array";
+print "\n";
+
+
+my $element;
+print "Array: ", @array, "\n";
+$element = pop (@array);
+push @array, '5';
+print "Last element: ", $element;
+print "\n";
+print "Array: ", @array, "\n";
+
+%links = (
+	"A", 1,
+	"B", 2,
+	"C", 3,
+);
+print %links, "\n";

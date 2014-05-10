@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+use 5.010;
+use strict;
+use warnings;
+
+say "What is the first number? :";
+my $number1 = <STDIN>;
+chomp $number1;
+say "What is the second number? :";
+my $number2 = <STDIN>;
+chomp $number2;
+my $sum = $number1 + $number2;
+say "The sum is $sum";
